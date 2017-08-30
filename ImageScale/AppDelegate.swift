@@ -20,7 +20,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationWillTerminate(_ aNotification: Notification) {
         // Insert code here to tear down your application
     }
-
-
+    
+    @IBAction func showNewWindow(_ sender : Any?) {        
+        if let window = NSStoryboard.init(name: "Main", bundle: nil).instantiateController(withIdentifier: "MainWindow") as? NSWindowController {
+            window.showWindow(nil)            
+        }
+    }
 }
 

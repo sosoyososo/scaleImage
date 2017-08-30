@@ -13,6 +13,11 @@
 		4728E8091F54FC3C0051708E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4728E8071F54FC3C0051708E /* Main.storyboard */; };
 		4728E8141F54FC3C0051708E /* ImageScaleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4728E8131F54FC3C0051708E /* ImageScaleTests.swift */; };
 		4728E81F1F54FC3C0051708E /* ImageScaleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4728E81E1F54FC3C0051708E /* ImageScaleUITests.swift */; };
+		4728E82D1F550E9B0051708E /* SizeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4728E82C1F550E9B0051708E /* SizeListViewController.swift */; };
+		475FC20B1F56605B00474A0E /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475FC20A1F56605B00474A0E /* Document.swift */; };
+		47B815711F5549B9003BE434 /* ImageScaleUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B815701F5549B9003BE434 /* ImageScaleUtil.swift */; };
+		47B815751F555ACD003BE434 /* scaleImage in Resources */ = {isa = PBXBuildFile; fileRef = 47B815741F555ACD003BE434 /* scaleImage */; };
+		47B815771F556474003BE434 /* AddPng.png in Resources */ = {isa = PBXBuildFile; fileRef = 47B815761F556474003BE434 /* AddPng.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +50,11 @@
 		4728E81A1F54FC3C0051708E /* ImageScaleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageScaleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4728E81E1F54FC3C0051708E /* ImageScaleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageScaleUITests.swift; sourceTree = "<group>"; };
 		4728E8201F54FC3C0051708E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4728E82C1F550E9B0051708E /* SizeListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SizeListViewController.swift; sourceTree = "<group>"; };
+		475FC20A1F56605B00474A0E /* Document.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
+		47B815701F5549B9003BE434 /* ImageScaleUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageScaleUtil.swift; sourceTree = "<group>"; };
+		47B815741F555ACD003BE434 /* scaleImage */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = scaleImage; sourceTree = SOURCE_ROOT; };
+		47B815761F556474003BE434 /* AddPng.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AddPng.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,11 +105,16 @@
 		4728E8001F54FC3C0051708E /* ImageScale */ = {
 			isa = PBXGroup;
 			children = (
+				47B815761F556474003BE434 /* AddPng.png */,
+				47B815741F555ACD003BE434 /* scaleImage */,
 				4728E8011F54FC3C0051708E /* AppDelegate.swift */,
+				475FC20A1F56605B00474A0E /* Document.swift */,
 				4728E8031F54FC3C0051708E /* ViewController.swift */,
 				4728E8051F54FC3C0051708E /* Assets.xcassets */,
 				4728E8071F54FC3C0051708E /* Main.storyboard */,
 				4728E80A1F54FC3C0051708E /* Info.plist */,
+				4728E82C1F550E9B0051708E /* SizeListViewController.swift */,
+				47B815701F5549B9003BE434 /* ImageScaleUtil.swift */,
 			);
 			path = ImageScale;
 			sourceTree = "<group>";
@@ -231,6 +246,8 @@
 			files = (
 				4728E8061F54FC3C0051708E /* Assets.xcassets in Resources */,
 				4728E8091F54FC3C0051708E /* Main.storyboard in Resources */,
+				47B815751F555ACD003BE434 /* scaleImage in Resources */,
+				47B815771F556474003BE434 /* AddPng.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,8 +272,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47B815711F5549B9003BE434 /* ImageScaleUtil.swift in Sources */,
 				4728E8041F54FC3C0051708E /* ViewController.swift in Sources */,
+				4728E82D1F550E9B0051708E /* SizeListViewController.swift in Sources */,
 				4728E8021F54FC3C0051708E /* AppDelegate.swift in Sources */,
+				475FC20B1F56605B00474A0E /* Document.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,6 +518,7 @@
 				4728E8251F54FC3C0051708E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4728E8261F54FC3C0051708E /* Build configuration list for PBXNativeTarget "ImageScaleTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +527,7 @@
 				4728E8281F54FC3C0051708E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4728E8291F54FC3C0051708E /* Build configuration list for PBXNativeTarget "ImageScaleUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +536,7 @@
 				4728E82B1F54FC3C0051708E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
